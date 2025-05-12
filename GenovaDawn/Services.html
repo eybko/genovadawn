@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Services</title>
+<link rel="stylesheet" type="text/css" href="stylerules.css">
+<meta charset="utf-8">
+<meta name="keywords" content="Lessons, Boarding, Training">
+<meta name="description" content="We offer a broad range of services for all ages interested in growing in their horsemanship.">
+<meta name="author" content="Faith Ralph">
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    
+<script>
+    $(document).ready(function() {
+      
+        $("#mailList").validate({
+            rules: {
+                firstname: {
+                    required: true,
+                    minlength: 2
+                },
+                phone: {
+                    required: true,
+                    phoneUS: true
+                },
+                email: {
+                    required: true,
+                    email: true
+                },
+                birthdate: {
+                    required: true,
+                    date: true
+                }
+            },
+            messages: {
+                firstname: {
+                    required: "Please enter your first name.",
+                    minlength: "Your first name must be at least 2 characters long."
+                },
+                phone: {
+                    required: "Please enter your phone number.",
+                    phoneUS: "Please enter a valid phone number."
+                },
+                email: {
+                    required: "Please enter your email address.",
+                    email: "Please enter a valid email address."
+                },
+                birthdate: {
+                    required: "Please enter your birthdate.",
+                    date: "Please enter a valid date."
+                }
+            }
+        });
+    });
+</script>
+</head>
+<body>
+
+<div id="container" class="centertext">
+    <h2>Services</h2> 
+    <div class="services-page">
+        <table id="pricelist">
+            <thead>
+                <tr>
+                    <th>Services</th>
+                    <th>Boarders</th>
+                    <th>Non-Boarders</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Lessons</td>
+                    <td>65</td>
+                    <td>75</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div id="container" class="centertext">
+    <h2>Join Our Mailing List</h2>
+    <div class="services-page">
+        <form id="mailList" action="" method="post"> 
+            <ul>
+                <li class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </li>
+                
+                <li class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </li>
+
+                <li class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </li>
+
+                <li class="form-group">
+                    <label for="birthdate">Date of Birth:</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </li>
+
+                <li class="form-group">
+                    <label>Preferred Contact Method:</label>
+                    <input type="radio" id="emailContact" name="contactMethod" value="Email" required>
+                    <label for="emailContact">Email</label>
+                    <input type="radio" id="phoneContact" name="contactMethod" value="Phone">
+                    <label for="phoneContact">Phone</label>
+                </li>
+
+                <li class="form-group form-group-checkboxes">
+                    <label>What services are you interested in?</label><br>
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="boarding" name="services[]" value="Boarding">
+                        <label for="boarding">Boarding</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="training" name="services[]" value="Training">
+                        <label for="training">Training</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="lessons" name="services[]" value="Lessons">
+                        <label for="lessons">Lessons</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="sales" name="services[]" value="Sales">
+                        <label for="sales">Sales</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="rehabilitation" name="services[]" value="Rehabilitation">
+                        <label for="rehabilitation">Rehabilitation</label>
+                    </div>
+
+                    <div class="checkbox-item">
+                        <input type="checkbox" id="rescues" name="services[]" value="Rescues">
+                        <label for="rescues">Rescues</label>
+                    </div>
+                </li>
+
+                <li class="form-group">
+                    <label for="updateFrequency">How often would you like to receive updates?</label>
+                    <select id="updateFrequency" name="updateFrequency" required>
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly">Monthly</option>
+                        <option value="quarterly">Quarterly</option>
+                    </select>
+                </li>
+            </ul>
+
+            <div class="buttons">
+                <button type="submit" class="submit-btn">Subscribe</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<header>Genova Dawn LLC</header>
+<nav>
+    <table class="menu">
+        <tr>
+            <td><a href="home.html">Home</a></td>
+            <td><a href="services.html">Services</a></td>
+            <td><a href="about.html">About</a></td>
+            <td><a href="facilities.html">Facilities</a></td>
+            <td><a href="menu.html">Menu</a></td>
+        </tr>
+    </table>
+
+    <footer>
+        <a href="home.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="services.html">Services</a>
+        <a href="https://returntofreedom.org/?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P8Y2I3113uG-YG1IpR42bs9NPPB_orbHiipzMBd4iUdjT80za1XhsAaAhsnEALw_wcB" target="_blank">Return to Freedom</a>
+    </footer>
+</nav>
+
+<h2> </h2>
+<img src="assets/western riding.jpeg" alt="Description of image 2">
+<img src="assets/english riding.jpeg" alt="Description of image 1">
+
+</body>
+</html>

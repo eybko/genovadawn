@@ -1,0 +1,211 @@
+header { }
+nav { }
+#container {
+    max-width: 960px; margin: 0 auto;
+ }
+
+    #left {
+        float: left; width: 20%; 
+    }
+
+        #main {
+            float: right; width: 80%;
+         }
+            
+            footer {
+                clear:both; 
+            }
+
+                .centertext {
+                    text-align: center; 
+                }
+                h1 {
+                    font-size: 2.5em;
+                    color: navy;
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                
+                p {
+                    font-size: 1.2em;
+                    line-height: 1.5;
+                    color: darkslategray;
+                    margin-bottom: 15px;
+                }
+                ul {
+                    font-size: 1.2em;
+                    line-height: 1.5; 
+                    color: darkslategray;
+                    margin-bottom: 15px;   
+                }
+                #pricelist {
+                    border: 4px solid darkgreen;
+                    width: 100%;
+                    border-collapse: collapse; /* Ensure the borders collapse to avoid double borders */
+                }
+                
+                #pricelist th, #pricelist td {
+                    border: 4px solid darkgreen;
+                    padding: 30px;
+                    text-align: center;
+                }
+                
+                #pricelist th {
+                    background-color: lightgreen;
+                    font-weight: bold;
+                }
+                
+                #pricelist td {
+                    background-color: lightyellow;
+                }
+                .menu {
+                    width: 100%; 
+                    margin: 0 auto; /* Centering the table */
+                    padding: 20px;
+                    border-collapse: collapse; /* Remove space between borders */
+                    table-layout: fixed; /* Ensure all columns have equal width */
+                }
+            
+                .menu td {
+                    text-align: center; /* Center the text inside the table cells */
+                }
+            
+                .menu td a {
+                    display: block; /* Make the link behave like a block element (full width) */
+                    padding: 15px 25px; /* Space around the text inside the "button" */
+                    text-decoration: none; /* Remove underline from links */
+                    color: white; /* Text color */
+                    background-color: darkgreen; /* Background color for the "button" */
+                    font-size: 16px; /* Font size for the text */
+                    border: 2px solid darkgreen; /* Border color for the button */
+                    border-radius: 5px; /* Rounded corners */
+                    transition: background-color 0.3s, transform 0.2s; /* Smooth transition effects */
+                }
+            
+                .menu td a:hover {
+                    background-color: green; /* Darker green on hover */
+                    transform: scale(1.1); /* Slightly enlarge the button on hover */
+                }
+            
+                .menu td a:active {
+                    background-color: forestgreen; /* Even darker green on click */
+                }
+                
+                nav {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f9f9f9;
+                    margin: 0;
+                    padding: 0;
+                }
+                
+                
+                form {
+                    max-width: 600px;
+                    margin: 20px auto;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    text-align: left;
+                }
+                
+                
+                h2 {
+                    text-align: center;
+                    color: #333;
+                }
+                
+                
+                ul {
+                    list-style-type: none;  
+                    padding: 0;
+                    margin: 0;
+                }
+                
+                
+                li {
+                    margin-bottom: 20px;
+                }
+                
+                
+                label {
+                    display: inline-block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                    color: #333;
+                }
+                
+                
+                input[type="radio"],
+                input[type="checkbox"] {
+                    margin-right: 10px; 
+                }
+                
+                
+                .form-group-checkboxes {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                }
+                
+                .form-group-checkboxes label {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+                
+                
+                input[type="text"],
+                input[type="tel"],
+                input[type="email"],
+                input[type="date"],
+                select {
+                    width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    border-radius: 4px;
+                    border: 1px solid #ccc;
+                    box-sizing: border-box;
+                }
+                
+                
+                .form-group {
+                    text-align: left;
+                }
+                
+                
+                .buttons {
+                    text-align: center;
+                }
+                
+                button {
+                    padding: 12px 20px;
+                    font-size: 16px;
+                    margin: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    width: 100px;
+                }
+        
+                .submit-btn {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+                
+                
+                .reset-btn {
+                    background-color: #f44336;
+                    color: white;
+                }
+                
+                
+                button:hover {
+                    opacity: 0.9;
+                }
+                
